@@ -1,23 +1,38 @@
 {
-  "name": "music-app",
-  "version": "1.0.0",
-  "description": "Musique app personnal to stram sound",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Akeem92/Music-app.git"
-  },
-  "author": "Akeem91",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Akeem92/Music-app/issues"
-  },
-  "homepage": "https://github.com/Akeem92/Music-app#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "music-app",
+    "version": "1.0.0",
+    "description": "Musique app personnal to stream sound",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "cross-env CONFIG_ENV=developpement nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Akeem92/Music-app.git"
+    },
+    "author": "Akeem91",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Akeem92/Music-app/issues"
+    },
+    "homepage": "https://github.com/Akeem92/Music-app#readme",
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "colors": "^1.4.0",
+        "connect-mongodb-session": "^3.1.1",
+        "csurf": "^1.11.0",
+        "dotenv": "^16.0.3",
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "express-ejs-layouts": "^2.5.1",
+        "express-session": "^1.17.3",
+        "mongoose": "^6.8.0",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "nodemon": "^2.0.20"
+    }
 }
